@@ -1,0 +1,5 @@
+# for macOS
+.DS_Store
+
+# for Example
+Example/Pods/

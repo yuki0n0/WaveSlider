@@ -1,0 +1,16 @@
+PODS:
+  - WaveSlider (1.0.0)
+
+DEPENDENCIES:
+  - WaveSlider (from `../`)
+
+EXTERNAL SOURCES:
+  WaveSlider:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WaveSlider: a45f6889e0d2fc01909572276591e7d94ddd6daa
+
+PODFILE CHECKSUM: 99d67ca72cc79af18254612d571fbf6c3d4e208d
+
+COCOAPODS: 1.8.4
