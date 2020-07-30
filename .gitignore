@@ -1,5 +1,8 @@
 # for macOS
 .DS_Store
 
+# for Xcode
+xcuserdata/
+
 # for Example
 Example/Pods/

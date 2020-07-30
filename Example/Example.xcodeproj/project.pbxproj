@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		CFB5BA3424D075F700EA2631 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB5BA3224D075F700EA2631 /* Main.storyboard */; };
 		CFB5BA3624D075F800EA2631 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFB5BA3524D075F800EA2631 /* Assets.xcassets */; };
 		CFB5BA3924D075F800EA2631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFB5BA3724D075F800EA2631 /* LaunchScreen.storyboard */; };
+		CFB5BA4824D1DF9D00EA2631 /* fanfare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFB5BA4724D1DF9D00EA2631 /* fanfare.mp3 */; };
+		CFB5BA4A24D2F02C00EA2631 /* eine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CFB5BA4924D2F02C00EA2631 /* eine.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CFB5BA3524D075F800EA2631 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFB5BA3824D075F800EA2631 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFB5BA3A24D075F800EA2631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB5BA4724D1DF9D00EA2631 /* fanfare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fanfare.mp3; sourceTree = "<group>"; };
+		CFB5BA4924D2F02C00EA2631 /* eine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eine.mp3; sourceTree = "<group>"; };
 		EF1041A0CEA86E6C1E2ABC52 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5FB969416EEFF6F485A2F7 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +52,6 @@
 				EF5FB969416EEFF6F485A2F7 /* Pods-Example.debug.xcconfig */,
 				3B07178B837BD1AC49F79702 /* Pods-Example.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +91,8 @@
 				CFB5BA3524D075F800EA2631 /* Assets.xcassets */,
 				CFB5BA3724D075F800EA2631 /* LaunchScreen.storyboard */,
 				CFB5BA3A24D075F800EA2631 /* Info.plist */,
+				CFB5BA4724D1DF9D00EA2631 /* fanfare.mp3 */,
+				CFB5BA4924D2F02C00EA2631 /* eine.mp3 */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -152,6 +157,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFB5BA4824D1DF9D00EA2631 /* fanfare.mp3 in Resources */,
+				CFB5BA4A24D2F02C00EA2631 /* eine.mp3 in Resources */,
 				CFB5BA3924D075F800EA2631 /* LaunchScreen.storyboard in Resources */,
 				CFB5BA3624D075F800EA2631 /* Assets.xcassets in Resources */,
 				CFB5BA3424D075F700EA2631 /* Main.storyboard in Resources */,
