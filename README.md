@@ -19,7 +19,12 @@ pod 'WaveSlider'
 import WaveSlider
 
 let waveSlider = WaveSlider()
+let path = Bundle.main.path(forResource: "music", ofType: "mp3")
+let url = URL(fileURLWithPath: path!)
+waveSlider.set(url: url)
 waveSlider.value = 0.2
+
+// Note: `url` of argument accepts only the local file path.
 ```
 
 ### Interface Builder (storyboard, xib)
@@ -41,6 +46,8 @@ waveSlider.value = 0.2
 - [ ] テストとCI
 - [ ] タップしてスライドできるように
   - [ ] IB からもよびだせるように。valuechanged で
+- [ ] ローカルファイルのみ対応な部分の修正 (そもそも引数を AVAudioFile にしたほうがいいかも)
+- [ ] 継承を UIControl にしなければ
 - [ ] UIカスタマイズ
   - [ ] bar の幅と間隔
   - [ ] padding
