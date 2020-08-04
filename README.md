@@ -19,8 +19,6 @@ pod 'WaveSlider'
 github "yuki0n0/WaveSlider"
 ```
 
-Normally, carthage will download binary from release assets.  If you don't want it, should use `--no-use-binaries` option.
-
 ## Usage
 
 ### Swift
