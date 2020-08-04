@@ -5,10 +5,14 @@
 
 ### CocoaPods
 
-
-
 ```ruby
 pod 'WaveSlider'
+```
+
+### Carthage
+
+```
+github "yuki0n0/WaveSlider"
 ```
 
 ## Usage
@@ -53,7 +57,6 @@ waveSlider.value = 0.2
   - [ ] padding
   - [ ] 角丸か否かの選択
 - [ ] ライブラリ
-  - [ ] Carthage
   - [ ] Swifty Package Manager
   - [ ] Manual
 - [ ] バグ修正

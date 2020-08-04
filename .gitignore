@@ -4,5 +4,8 @@
 # for Xcode
 xcuserdata/
 
+# for Carthage
+Carthage/Build
+
 # for Example
 Example/Pods/
