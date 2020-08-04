@@ -6,6 +6,7 @@ xcuserdata/
 
 # for Carthage
 Carthage/Build
+*.framework.zip
 
 # for Example
 Example/Pods/
