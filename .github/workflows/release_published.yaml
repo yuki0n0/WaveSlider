@@ -1,4 +1,4 @@
-name: Attach binary to release
+name: Release published
 
 on:
   release:
