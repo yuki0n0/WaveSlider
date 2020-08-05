@@ -1,48 +1,48 @@
-name: Release published
+# name: Release published
 
-on:
-  release:
-    types: [published]
+# on:
+#   release:
+#     types: [published]
 
-env:
-  GITHUB_TOKEN: ${{ github.token }}
+# env:
+#   GITHUB_TOKEN: ${{ github.token }}
 
-jobs:
-  carthage:
-    runs-on: macos-10.15
+# jobs:
+#   carthage:
+#     runs-on: macos-10.15
 
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@v2
 
-    - name: Build
-      run: carthage build --archive
+#     - name: Build
+#       run: carthage build --archive
 
-    - name: Get
-      id: get
-      uses: bruceadams/get-release@v1.2.0
+#     - name: Get
+#       id: get
+#       uses: bruceadams/get-release@v1.2.0
 
-    - name: Upload
-      uses: actions/upload-release-asset@v1.0.2
-      with:
-        upload_url: ${{ steps.get.outputs.upload_url }}
-        asset_path: ./WaveSlider.framework.zip
-        asset_name: WaveSlider.framework.zip
-        asset_content_type: application/zip
+#     - name: Upload
+#       uses: actions/upload-release-asset@v1.0.2
+#       with:
+#         upload_url: ${{ steps.get.outputs.upload_url }}
+#         asset_path: ./WaveSlider.framework.zip
+#         asset_name: WaveSlider.framework.zip
+#         asset_content_type: application/zip
 
-  cocoapods:
-    runs-on: macos-10.15
+#   cocoapods:
+#     runs-on: macos-10.15
 
-    env:
-      COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-      WAVESLIDER_VERSION: ${GITHUB_REF##*/}
+#     env:
+#       COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+#       WAVESLIDER_VERSION: ${GITHUB_REF##*/}
 
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@v2
 
-    - name: Lint
-      run: pod spec lint
+#     - name: Lint
+#       run: pod spec lint
 
-    - name: Deploy
-      run: pod trunk push WaveSlider.podspec
+#     - name: Deploy
+#       run: pod trunk push WaveSlider.podspec
