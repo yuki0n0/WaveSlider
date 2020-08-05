@@ -6,6 +6,9 @@
 #  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
 #
 
+version = ENV["WAVESLIDER_VERSION"]
+exit 1 if version.to_s.empty?
+
 Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -16,8 +19,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "WaveSlider"
-  spec.version      = "1.0.0"
-  spec.summary      = "This is what like a UISlider for music."
+  spec.version      = version
+  spec.summary      = "This is like a UISlider for music."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -75,7 +78,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/yuki0n0/WaveSlider.git", :tag => "v#{spec.version}" }
+  spec.source       = { :git => "https://github.com/yuki0n0/WaveSlider.git", :tag => spec.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
