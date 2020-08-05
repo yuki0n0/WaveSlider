@@ -8,7 +8,7 @@ env:
   GITHUB_TOKEN: ${{ github.token }}
 
 jobs:
-  attach:
+  carthage:
     runs-on: macos-10.15
 
     steps:
@@ -29,3 +29,21 @@ jobs:
         asset_path: ./WaveSlider.framework.zip
         asset_name: WaveSlider.framework.zip
         asset_content_type: application/zip
+
+  cocoapods:
+    runs-on: macos-10.15
+
+    env:
+      COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
+      WAVESLIDER_VERSION: ${GITHUB_REF##*/}
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Lint
+      run: pod spec lint
+
+    - name: Deploy
+      run: pod trunk push WaveSlider.podspec
+      
