@@ -3,6 +3,7 @@
 
 # for Xcode
 xcuserdata/
+build/
 
 # for Carthage
 Carthage/Build

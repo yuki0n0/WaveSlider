@@ -1,4 +1,6 @@
 
+![Build](https://github.com/yuki0n0/WaveSlider/workflows/Build/badge.svg)
+
 # WaveSlider
 
 ## Installation
